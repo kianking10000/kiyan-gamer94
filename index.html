@@ -1,0 +1,379 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kiyan Gamer 94 | Minecraft</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+        background: #222;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 3px 15px #000;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 14px;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        color: #55ff55;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 90px 20px;
+        background:
+            linear-gradient(#0008, #0008),
+            url("https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        margin: 0;
+        color: #55ff55;
+        text-shadow: 4px 4px 0 #000;
+    }
+
+    .hero p {
+        font-size: 21px;
+        color: #ddd;
+        margin: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        background: #55ff55;
+        color: #111;
+        padding: 15px 30px;
+        margin-top: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.2s;
+    }
+
+    .button:hover {
+        transform: scale(1.08);
+        background: white;
+    }
+
+    /* SECTION */
+    .section {
+        padding: 50px 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section h2 {
+        text-align: center;
+        color: #55ff55;
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    /* CARDS */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: #222;
+        border: 2px solid #333;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        transition: 0.25s;
+        box-shadow: 0 5px 15px #000;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        border-color: #55ff55;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        color: #55ff55;
+        font-size: 23px;
+    }
+
+    .card p {
+        color: #bbb;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+
+    .card a {
+        display: inline-block;
+        margin: 15px 0 22px;
+        padding: 10px 20px;
+        background: #55ff55;
+        color: #111;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    /* WELCOME */
+    .welcome {
+        text-align: center;
+        padding: 60px 20px;
+        background: #181818;
+    }
+
+    .welcome p {
+        max-width: 800px;
+        margin: auto;
+        color: #ccc;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #080808;
+        text-align: center;
+        padding: 30px;
+        color: #777;
+        margin-top: 30px;
+    }
+
+    footer strong {
+        color: #55ff55;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+        nav a {
+            display: inline-block;
+            margin: 7px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="store.html">STORE</a>
+    <a href="skins.html">SKINS</a>
+    <a href="textures.html">TEXTURES</a>
+    <a href="maps.html">MAPS</a>
+    <a href="mods.html">MODS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="Download.html">DOWNLOAD</a>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <h1>KIYAN GAMER 94</h1>
+
+    <p>
+        Welcome to my Minecraft world!
+        Skins, Mods, Maps, Textures and more!
+    </p>
+
+    <a class="button" href="Download.html">
+        DOWNLOAD NOW
+    </a>
+
+</section>
+
+
+<!-- WELCOME -->
+<section class="welcome">
+
+    <h2>⛏️ Welcome to Kiyan Gamer 94 ⛏️</h2>
+
+    <p>
+        Here you can find Minecraft skins, textures, maps,
+        mods and awesome downloads. Explore the website
+        and discover something new for your Minecraft world!
+    </p>
+
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="section">
+
+    <h2>🔥 Explore Minecraft</h2>
+
+    <div class="cards">
+
+        <!-- SKINS -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?auto=format&fit=crop&w=800&q=80">
+
+            <h3>🧑 SKINS</h3>
+
+            <p>
+                Find cool Minecraft skins for your character.
+            </p>
+
+            <a href="skins.html">VIEW SKINS</a>
+
+        </div>
+
+
+        <!-- TEXTURES -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=800&q=80">
+
+            <h3>🧱 TEXTURES</h3>
+
+            <p>
+                Make your Minecraft world look amazing.
+            </p>
+
+            <a href="textures.html">VIEW TEXTURES</a>
+
+        </div>
+
+
+        <!-- MAPS -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800&q=80">
+
+            <h3>🗺️ MAPS</h3>
+
+            <p>
+                Explore exciting Minecraft maps and worlds.
+            </p>
+
+            <a href="maps.html">VIEW MAPS</a>
+
+        </div>
+
+
+        <!-- MODS -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1614294149010-950b698f72c0?auto=format&fit=crop&w=800&q=80">
+
+            <h3>⚔️ MODS</h3>
+
+            <p>
+                Discover awesome mods for Minecraft.
+            </p>
+
+            <a href="mods.html">VIEW MODS</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DOWNLOAD -->
+<section class="section">
+
+    <h2>💾 Latest Downloads</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>⭐ Minecraft Pack</h3>
+
+            <p>
+                A cool collection for your Minecraft world.
+            </p>
+
+            <a href="Download.html">DOWNLOAD</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🔥 Epic Mods</h3>
+
+            <p>
+                Check out the latest mods and additions.
+            </p>
+
+            <a href="mods.html">EXPLORE</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>💎 New Skins</h3>
+
+            <p>
+                Find your next Minecraft character skin.
+            </p>
+
+            <a href="skins.html">EXPLORE</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 <strong>Kiyan Gamer 94</strong>
+    </p>
+
+    <p>
+        Minecraft Fan Website
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
