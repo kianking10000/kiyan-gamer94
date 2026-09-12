@@ -1,4 +1,3 @@
-<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,118 +7,141 @@
 <title>Kiyan Gamer 94 - Store</title>
 
 <style>
-* {
-    box-sizing: border-box;
+
+*{
+    box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    background: #111;
-    color: white;
-    font-family: Arial, sans-serif;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#080808;
+    color:white;
 }
 
-nav {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 3px 15px #000;
+/* NAVBAR */
+
+nav{
+    background:#111;
+    padding:20px;
+    text-align:center;
+    border-bottom:2px solid #00ff66;
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 14px;
-    font-weight: bold;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 13px;
+    font-weight:bold;
 }
 
-nav a:hover {
-    color: #55ff55;
+nav a:hover{
+    color:#00ff66;
 }
 
-.header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #111, #253525);
+/* HEADER */
+
+.header{
+    text-align:center;
+    padding:60px 20px 35px;
 }
 
-.header h1 {
-    font-size: 48px;
-    color: #55ff55;
-    text-shadow: 4px 4px #000;
+.header h1{
+    font-size:55px;
+    color:#00ff66;
+    margin:0;
+    text-shadow:0 0 15px #00ff66;
 }
 
-.header p {
-    color: #bbb;
-    font-size: 18px;
+.header p{
+    color:#aaa;
+    font-size:18px;
 }
 
-.products {
-    max-width: 1200px;
-    margin: auto;
-    padding: 45px 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 25px;
+/* PRODUCTS */
+
+.products{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
-.product {
-    background: #202020;
-    border: 2px solid #333;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 5px 15px #000;
-    transition: 0.25s;
+.product{
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 15px #000;
 }
 
-.product:hover {
-    transform: translateY(-8px);
-    border-color: #55ff55;
+.product:hover{
+    transform:translateY(-8px);
+    border-color:#00ff66;
+    box-shadow:0 0 25px #00ff6633;
 }
 
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.product img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
 }
 
-.product h2 {
-    color: #55ff55;
+.info{
+    padding:22px;
 }
 
-.product p {
-    color: #aaa;
-    padding: 0 15px;
+.info h2{
+    margin-top:0;
+    color:#00ff66;
 }
 
-.price {
-    font-size: 22px;
-    color: #fff;
-    font-weight: bold;
+.info p{
+    color:#bbb;
+    min-height:45px;
 }
 
-.buy {
-    display: inline-block;
-    background: #55ff55;
-    color: #111;
-    padding: 12px 25px;
-    margin: 15px 0 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
+.price{
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    margin:18px 0;
 }
 
-.buy:hover {
-    background: white;
+.buy{
+    display:block;
+    text-align:center;
+    background:#00aa44;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:9px;
+    font-weight:bold;
+    transition:0.2s;
 }
 
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 30px;
-    color: #777;
+.buy:hover{
+    background:#00ff66;
+    color:black;
 }
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+    background:#111;
+    color:#777;
+}
+
 </style>
 </head>
 
@@ -136,5 +158,192 @@ footer {
     <a href="Download.html">DOWNLOAD</a>
 </nav>
 
-<section cl
-```
+
+<section class="header">
+
+    <h1>KIYAN GAMER 94 STORE</h1>
+
+    <p>
+        Minecraft Skins, Maps, Textures & Mods
+    </p>
+
+</section>
+
+
+<section class="products">
+
+
+    <!-- PRODUCT 1 -->
+
+    <div class="product">
+
+        <img src="https://minotar.net/armor/body/Dream/500.png">
+
+        <div class="info">
+
+            <h2>Dream Skin</h2>
+
+            <p>
+                Premium Minecraft Dream-style skin.
+            </p>
+
+            <div class="price">
+                $1.99
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div class="product">
+
+        <img src="https://minotar.net/armor/body/Steve/500.png">
+
+        <div class="info">
+
+            <h2>Classic Steve Pack</h2>
+
+            <p>
+                Classic Minecraft Steve skin pack.
+            </p>
+
+            <div class="price">
+                $0.99
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+
+    <div class="product">
+
+        <img src="https://minotar.net/armor/body/Herobrine/500.png">
+
+        <div class="info">
+
+            <h2>Herobrine Skin</h2>
+
+            <p>
+                Dark Herobrine skin for Minecraft.
+            </p>
+
+            <div class="price">
+                $1.49
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80">
+
+        <div class="info">
+
+            <h2>HD Texture Pack</h2>
+
+            <p>
+                High quality textures for your Minecraft world.
+            </p>
+
+            <div class="price">
+                $2.99
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=800&q=80">
+
+        <div class="info">
+
+            <h2>Adventure Map</h2>
+
+            <p>
+                Explore an exciting Minecraft adventure map.
+            </p>
+
+            <div class="price">
+                $2.49
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 6 -->
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?auto=format&fit=crop&w=800&q=80">
+
+        <div class="info">
+
+            <h2>Ultimate Mod Pack</h2>
+
+            <p>
+                A collection of awesome Minecraft mods.
+            </p>
+
+            <div class="price">
+                $3.99
+            </div>
+
+            <a class="buy" href="Download.html">
+                BUY NOW
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Kiyan Gamer 94  
+    <br><br>
+    Minecraft Content Store
+
+</footer>
+
+</body>
+</html>
