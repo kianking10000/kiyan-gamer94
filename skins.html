@@ -1,35 +1,206 @@
-<!-- Herobrine -->
-<div class="old-price">۲۹۹٬۰۰۰ تومان</div>
-<div class="price">۹۹٬۰۰۰ تومان</div>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Warrior -->
-<div class="old-price">۲۴۹٬۰۰۰ تومان</div>
-<div class="price">۸۹٬۰۰۰ تومان</div>
+<title>Kiyan Gamer 94 - Skins</title>
 
-<!-- Ninja -->
-<div class="old-price">۲۲۹٬۰۰۰ تومان</div>
-<div class="price">۷۹٬۰۰۰ تومان</div>
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-<!-- King -->
-<div class="old-price">۲۹۹٬۰۰۰ تومان</div>
-<div class="price">۹۹٬۰۰۰ تومان</div>
+    body {
+        margin: 0;
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
 
-<!-- Demon -->
-<div class="old-price">۳۴۹٬۰۰۰ تومان</div>
-<div class="price">۱۲۹٬۰۰۰ تومان</div>
+    nav {
+        background: #222;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 3px 15px #000;
+    }
 
-<!-- Wizard -->
-<div class="old-price">۲۴۹٬۰۰۰ تومان</div>
-<div class="price">۸۹٬۰۰۰ تومان</div>
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 14px;
+        font-weight: bold;
+    }
 
-<!-- Ghost -->
-<div class="old-price">۲۹۹٬۰۰۰ تومان</div>
-<div class="price">۱۰۹٬۰۰۰ تومان</div>
+    nav a:hover {
+        color: #55ff55;
+    }
 
-<!-- Dragon -->
-<div class="old-price">۳۹۹٬۰۰۰ تومان</div>
-<div class="price">۱۴۹٬۰۰۰ تومان</div>
+    .title {
+        text-align: center;
+        padding: 50px 20px 30px;
+    }
 
-<!-- Diamond -->
-<div class="old-price">۳۴۹٬۰۰۰ تومان</div>
-<div class="price">۱۱۹٬۰۰۰ تومان</div>
+    .title h1 {
+        color: #55ff55;
+        font-size: 45px;
+        margin-bottom: 10px;
+        text-shadow: 3px 3px #000;
+    }
+
+    .title p {
+        color: #aaa;
+        font-size: 18px;
+    }
+
+    .skins {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 30px 60px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .skin {
+        background: #202020;
+        border: 2px solid #333;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 20px;
+        transition: 0.25s;
+        box-shadow: 0 5px 15px #000;
+    }
+
+    .skin:hover {
+        transform: translateY(-8px);
+        border-color: #55ff55;
+    }
+
+    .skin img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        background: #181818;
+    }
+
+    .skin h2 {
+        color: #55ff55;
+        font-size: 22px;
+    }
+
+    .skin p {
+        color: #aaa;
+    }
+
+    .download {
+        display: inline-block;
+        background: #55ff55;
+        color: #111;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 12px 25px;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    .download:hover {
+        background: white;
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: #080808;
+        color: #777;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="store.html">STORE</a>
+    <a href="skins.html">SKINS</a>
+    <a href="textures.html">TEXTURES</a>
+    <a href="maps.html">MAPS</a>
+    <a href="mods.html">MODS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="Download.html">DOWNLOAD</a>
+</nav>
+
+<div class="title">
+    <h1>🧑 MINECRAFT SKINS</h1>
+    <p>Choose your favorite skin and download it!</p>
+</div>
+
+<div class="skins">
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Steve/300.png" alt="Steve Skin">
+        <h2>Steve</h2>
+        <p>Classic Minecraft Skin</p>
+        <a class="download" href="https://minotar.net/download/Steve" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Alex/300.png" alt="Alex Skin">
+        <h2>Alex</h2>
+        <p>Classic Alex Skin</p>
+        <a class="download" href="https://minotar.net/download/Alex" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Notch/300.png" alt="Notch Skin">
+        <h2>Notch</h2>
+        <p>Legendary Minecraft Skin</p>
+        <a class="download" href="https://minotar.net/download/Notch" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Dream/300.png" alt="Dream Skin">
+        <h2>Dream</h2>
+        <p>Dream Style Skin</p>
+        <a class="download" href="https://minotar.net/download/Dream" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Technoblade/300.png" alt="Technoblade Skin">
+        <h2>Technoblade</h2>
+        <p>Warrior Style Skin</p>
+        <a class="download" href="https://minotar.net/download/Technoblade" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+    <div class="skin">
+        <img src="https://minotar.net/armor/body/Herobrine/300.png" alt="Herobrine Skin">
+        <h2>Herobrine</h2>
+        <p>Mysterious Minecraft Skin</p>
+        <a class="download" href="https://minotar.net/download/Herobrine" download>
+            DOWNLOAD
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Kiyan Gamer 94
+</footer>
+
+</body>
+</html>
+```
